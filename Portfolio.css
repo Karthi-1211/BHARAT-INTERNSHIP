@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set height to 100% to fill the viewport */
+    overflow-y: scroll; /* Enable scrolling for longer content */
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Parallax Container Styles */
+  .parallax-container {
+    position: relative;
+    height: 100vh; /* Set height to 100% of the viewport */
+    width: 100%;
+  }
+  
+  .parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 142vh;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(0.01px); /*Add a slight blur effect to the background image */
+    transform: scale(2); 
+     /*Scale the image up to create a parallax effect */
+     position: absolute;
+  }
+
+  .parallax-imae {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0%;
+    padding-left:0% ;
+    margin-right: 0%;
+    width: 1350px;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(0.01px); /*Add a slight blur effect to the background image */
+     /* transform: scale(0.2); Scale the image up to create a parallax effect */
+     position: absolute;
+  }
+
+  .parallax-imagee{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 142vh;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(0.01px); /*Add a slight blur effect to the background image */
+    transform: scale(2); 
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .parallax-imagee:hover{
+    background-image: url(../Bharat/media/op.jpg);
+    height: 200px;
+
+    width: 142vh;
+    /* background-size: cover; */
+     background-position: center; 
+     opacity: 1;
+    /* background-position: top; */
+     padding-left: 150px; 
+     padding-top: 20px;
+    }
+  /* Parallax Content Styles */
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    z-index: 1; /* Position the content on top of the blurred background image */
+  }
+  
+  /* Section-specific parallax styles */
+  
+  #about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #skills .skills-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    margin-bottom: 10px;
+  }
+  
+  .skills-list li i {
+    margin-right: 10px;
+  }
+  
+  #projects .projects-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .projects-list li {
+    margin-bottom: 10px;
+  }
+  
+  #contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-list li i {
+    margin-right: 10px;
+  }
